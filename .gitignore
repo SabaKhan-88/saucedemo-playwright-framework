@@ -1,0 +1,9 @@
+node_modules/
+test-results/
+playwright-report/
+blob-report/
+reports/
+.auth/*
+!.auth/.gitkeep
+# real secrets live in .env (never commit). .env.qa/.env.staging here hold only public demo values.
+.env

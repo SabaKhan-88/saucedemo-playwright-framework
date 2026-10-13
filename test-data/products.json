@@ -1,0 +1,12 @@
+{
+  "backpack": "Sauce Labs Backpack",
+  "bikeLight": "Sauce Labs Bike Light",
+  "boltTShirt": "Sauce Labs Bolt T-Shirt",
+  "totalProducts": 6,
+  "sortCases": [
+    { "name": "price low to high", "option": "lohi", "by": "price", "order": "asc" },
+    { "name": "price high to low", "option": "hilo", "by": "price", "order": "desc" },
+    { "name": "name A to Z", "option": "az", "by": "name", "order": "asc" },
+    { "name": "name Z to A", "option": "za", "by": "name", "order": "desc" }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "saucedemo-playwright-framework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright (JavaScript) automation framework for https://www.saucedemo.com - POM, fixtures, data-driven, storageState, API+UI, mocking, tags",
+  "scripts": {
+    "test": "cross-env ENV=qa playwright test",
+    "test:qa": "cross-env ENV=qa playwright test",
+    "test:staging": "cross-env ENV=staging playwright test",
+    "test:smoke": "playwright test --project=chromium --grep \"@smoke|@setup\"",
+    "test:regression": "playwright test --project=chromium --grep \"@regression|@setup\"",
+    "test:e2e": "playwright test --project=chromium --grep \"@e2e|@setup\"",
+    "test:api": "playwright test --project=api",
+    "test:mock": "playwright test --project=chromium --grep \"@mock|@setup\"",
+    "test:headed": "playwright test --project=chromium --headed",
+    "test:debug": "playwright test --project=chromium --debug",
+    "test:ui": "playwright test --ui",
+    "codegen": "playwright codegen https://www.saucedemo.com",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5"
+  }
+}

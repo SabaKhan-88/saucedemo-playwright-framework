@@ -1,0 +1,8 @@
+{
+  "customer": { "firstName": "Asha", "lastName": "Verma", "postalCode": "110001" },
+  "invalidCases": [
+    { "name": "missing first name", "firstName": "", "lastName": "Verma", "postalCode": "110001", "expectedError": "First Name is required" },
+    { "name": "missing last name", "firstName": "Asha", "lastName": "", "postalCode": "110001", "expectedError": "Last Name is required" },
+    { "name": "missing postal code", "firstName": "Asha", "lastName": "Verma", "postalCode": "", "expectedError": "Postal Code is required" }
+  ]
+}
